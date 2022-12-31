@@ -1,0 +1,8 @@
+<input type="text" #msg />
+<button (click)="sendMessage(msg.value)">
+    Send
+</button>
+<div>
+    received message from server: {{fromServer}}
+    <br> sent message to server: {{msg.value}}
+</div>
